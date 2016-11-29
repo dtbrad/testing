@@ -1,7 +1,7 @@
 FactoryGirl.define do
   factory :contact do
-    firstname "MyString"
-    lastname "MyString"
-    email "MyString"
+    firstname "John"
+    lastname "Doe"
+    sequence(:email) { |n| "johndoe#{n}@example.com"}
   end
 end
